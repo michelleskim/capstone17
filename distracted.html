@@ -6,9 +6,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="scripts.js"> </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://use.typekit.net/pup1gxc.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
-<div class="body">
   <!-- The overlay -->
 <div id="myNav" class="overlay">
 
@@ -33,15 +34,22 @@
 </div>
 
 <div>
-  <h1>Who do you relate to the most?</h1>
+  <h1 class="dropdown">Who do you relate to the most?</h1>
 </div>
 
-<div>
-  <a href="distracted-a.html" class="label">A</a>
-    <p>I need free time to myself to feel happy.</p>
-  <a href="distracted-b.html" class="label">B</a>
-    <p>I need a quality TV show to feel happy.</p>
+<div class="options">
+  <div class="column">
+    <a href="distracted-a.html" class="label">A</a>
+    <p>I need <u>free time to myself</u> to feel happy.</p>
+  </div>
+  <div class="column">
+    <a href="distracted-b.html" class="label">B</a>
+    <p>I need <u>a quality TV show</u> to feel happy.</p>
+  </div>
 </div>
+
+<div class="footer">
 </div>
+
 </body>
 </html>

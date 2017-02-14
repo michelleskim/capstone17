@@ -1,22 +1,20 @@
 body{
-  margin: 0;
+  width: 85%;
+  margin: 0 auto;
   font-family: filson-pro, sans-serif;
   font-style: normal;
-  font-weight: 200;
-}
-.body{
-  margin: 0 auto;
-  width: 85%;
+  font-weight: 600;
 }
 h1{
+  font-size: 60px;
   display: inline;
-  font-size: 150px;
+  font-family: aurea-ultra, serif;
 }
 h2{
-  font-size: 40px;
+  font-size: 30px;
 }
 p{
-  font-size: 60px;
+  font-size: 20px;
 }
 i{
   font-weight: 100;
@@ -26,7 +24,7 @@ i{
     color: black;
     background-color: white;
     padding: 0px;
-    font-size: 100px;
+    font-size: 80px;
     border: none;
     cursor: pointer;
 }
@@ -52,7 +50,7 @@ i{
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
-    font-size: 60px;
+    font-size: 25px;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -64,11 +62,13 @@ i{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-#home-title{
-  font-size:100px;
-  margin-top: 150px;
+.home-title{
+  position: fixed;
+  margin-top:150px;
+  font-size:70px;
+  margin-right: 30px;
   font-family: aurea-ultra, serif;
-  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #4458A5;
   color: white;
 }
@@ -79,10 +79,14 @@ a:link, a:visited{
   color: #3AC3C7;
   text-decoration: none;
   position: relative;
+  -webkit-text-stroke-width: 0px;
+}
+a:hover{
+  color:grey;
 }
 .submit{
   display: block;
-  font-size: 80px;
+  font-size: 30px;
   border:5px solid grey;
   width: 40%;
 }
@@ -90,6 +94,83 @@ a:link, a:visited{
   font-size: 100px;
   margin-bottom: 30px;
   text-align: center;
+}
+.nav-container{
+  font-size: 50px;
+  position: fixed;
+  top: 30px;
+}
+.hamburger{
+  position: fixed;
+  right: 30px;
+}
+#back-home{
+  opacity: 0;
+}
+#back, #back-home{
+  position: fixed;
+  left: 30px;
+}
+.entrace-img{
+  width: 100%;
+}
+.back{
+  font-size: 50px;
+}
+.attr{
+  font-size: 20px;
+  margin: 0;
+}
+.blank{
+   border-bottom: 2px solid lightgrey;
+   font-size: 50px;
+   width: 40%;
+}
+.label{
+  font-size: 50px;
+}
+label{
+  font-size: 40px;
+}
+.footer{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  background-color: #4458A5;
+}
+.scroll{
+  position: fixed;
+  margin-top:150px;
+  font-family: quatro, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+.quote{
+  position: fixed;
+  margin-top:150px;
+  font-family: filson-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: 30px;
+}
+.intro-1{
+  font-family: aurea-ultra, serif;
+  font-size: 40px;
+}
+.down{
+  position: fixed;
+  bottom: 100px;
+  font-size: 60px;
+  left:50%;
+}
+.options{
+  margin-bottom: 300px;
+}
+.column{
+  width: 50%;
+  float: left;
 }
 /* The Overlay (background) */
 .overlay {
@@ -147,85 +228,21 @@ a:link, a:visited{
         right: 35px;
     }
 }
-.nav-container{
-  font-size: 70px;
-  position: fixed;
-  right: 50px;
-  top:50px;
-}
-.hamburger{
-  text-align: right;
-  float: right;
-  color:#1440F0;
-}
-#back-home{
-  opacity: 0;
-}
-.entrace-img{
-  width: 100%;
-}
-.back{
-  font-size: 50px;
-}
-.attr{
-  font-size: 20px;
-  margin: 0;
-}
-.blank{
-   border-bottom: 2px solid lightgrey;
-   font-size: 50px;
-}
-.recommend{
-  display: block;
-}
-.label{
-  font-size: 80px;
-}
-label{
-  font-size: 80px;
-}
-.footer{
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 50px;
-  background-color: #4458A5;
-}
-.scroll{
-  position: fixed;
-  font-family: quatro, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-}
-.quote{
-  position: fixed;
-  font-family: filson-pro, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.intro-1{
-  font-family: aurea-ultra, serif;
-  font-size: 40px;
-}
-.down{
-  position: fixed;
-  bottom: 200px;
-  font-size: 50px;
-  text-align: center;
-}
 @media screen and (min-width: 800px) {
+    .submit{
+      width: 30%;
+      font-size: 40px;
+    }
+    h2{
+      font-size: 40px;
+    }
+    .home-title{
+      font-size: 100px;
+    }
+    .scroll{
+      font-size: 100px;
+    }
     .nav-container{
       font-size: 40px;
-    }
-    h1{
-      font-size: 80px;
-    }
-    .submit{
-      width: 20%;
-      font-size: 40px;
-    }
-    .footer{
-      padding: 40px;
     }
 }
