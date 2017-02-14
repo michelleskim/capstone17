@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soup Exchange</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="scripts.js"> </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html" class="nav">Home</a>
+    <a href="#" class="nav">Intro</a>
+    <a href="about.html" class="nav">About</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="nav-container">
+  <a href="distracted.html"> <i class="fa fa-chevron-left" aria-hidden="true" id="back"></i> </a>
+  <div onclick="openNav()" class="hamburger">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+</div>
+
+  <div class="dropdown">
+   <h1 class="fillin">I'm looking for </h1>
+   <button onclick="myFunction()" class="dropbtn">_______</button>
+   <h1>.</h1>
+    <span id="myDropdown" class="dropdown-content">
+      <a href="distracted-b-1.html">a TV show to binge</a>
+      <a href="distracted-b-2.html">a youtube channel</a>
+      <a href="distracted-b-3.html">a social media account</a>
+  </div>
+</body>
+</body>
+</html>
