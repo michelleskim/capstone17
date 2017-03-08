@@ -491,3 +491,42 @@ a:link, a:visited{
     width:90%;
   }
 }
+
+@media screen and (min-width: 2000px){
+  .head-title{
+    font-size: 100px;
+  }
+  .title{
+    font-size: 20px;
+  }
+  .button{
+    font-size: 30px;
+    padding: 10px 60px;
+  }
+  .skip{
+    font-size: 20px;
+  }
+  .outline{
+    -webkit-text-stroke-width:3px;
+  }
+  .title-container{
+    margin-top:250px;
+  }
+  .breadcrumbs{
+    visibility: visible;
+    position: fixed;
+    right:40px;
+    top:40%;
+    font-size: 40px;
+  }
+  .header{
+    width: 100px;
+    height: 100%;
+    left:auto;
+    font-size: 40px;
+  }
+  .hamburger{
+    right: 40px;
+    top:10px;
+  }
+}
