@@ -12,14 +12,17 @@ h1{
   font-weight: 800;
 }
 h2{
-  font-size: 20px;
+  font-size: 24px;
 }
 p{
-  font-size: 18px;
+  font-size: 16px;
 }
 .subhead{
   color:white;
   font-size: 28px;
+}
+.white-text{
+  color: white;
 }
 .dropbtn {
   background-color: #F9F9F9;
@@ -31,9 +34,19 @@ p{
     width: 90%;
     margin: 0 auto;
 }
-.dropdown {
+.dropdown, .dropdown-left{
     color:#4048E8;
     margin-top:130px;
+    text-align: center;
+}
+.dropdown-left{
+  text-align: left;
+}
+.bottom-margin{
+  margin-bottom:130px;
+}
+.submit-container{
+  text-align: center;
 }
 .recommend{
   position: relative;
@@ -44,9 +57,6 @@ p{
 .resources-container{
   width: 90%;
   margin: 0 auto;
-}
-.dropdown-text{
-    font-size: 35px;
 }
 .header-text{
   font-size: 30px;
@@ -81,15 +91,27 @@ hr{
 a:link, a:visited{
   text-decoration: none;
 }
-.skip{
+.skip, .skip-blue{
   color: #FFA69E;
   position: fixed;
   bottom: 25px;
-  left: 25px;
-  font-size: 16px;
+  left:30px;
+  font-size: 18px;
 }
-.skip:hover{
-  border-bottom: solid;
+.skip-blue{
+  border-bottom: 3px solid #4048E8;
+}
+.two-buttons{
+  background-color: #FFA69E;
+  border: 3px solid #FFA69E;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .submit{
   display: block;
@@ -111,13 +133,23 @@ input:focus{
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  font-size: 18px;
+}
+.button{
+  position: relative;
+  right:3px;
+}
+.button-right:hover{
+  background-color:#F9F9F9;
+  border:3px solid #FFA69E;
+  color:#FFA69E;
 }
 .button:hover{
   border: 3px solid #FFA69E;
   background-color: #F9F9F9;
   color: #FFA69E;
 }
-.button-blue:hover{
+.button-blue:hover, .two-buttons:hover{
   background-color:#FBE0EB;
   border: 3px solid #FBE0EB;
   color:#FFA69E;
@@ -165,13 +197,19 @@ input:focus{
   margin: 0;
 }
 .blank, .recommend-blank{
-   border: 3px solid #FFA69E;
-   width: 50%;
-   font-family: filson-pro, sans-serif;
-   font-style: normal;
-   font-size: 18px;
-   font-weight: 600;
-    color:#FFA69E;
+  border: 3px solid #FFA69E;
+  width: 90%;
+  font-family: filson-pro, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color:#FFA69E;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+.blank::placeholder{
+  color: #FBE0EB;
+  font-weight: 500;
 }
 .recommend-blank{
   width: 90%;
@@ -215,9 +253,6 @@ input:focus{
 .quote{
   color:#FBE0EB;
 }
-.highlight{
-  background-color: #FFA69E;
-}
 .intro-1{
   font-family: aurea-ultra, serif;
   font-size: 40px;
@@ -232,15 +267,15 @@ input:focus{
   margin-bottom: 300px;
 }
 .highlight{
-  background-color: #FFA69E;
+  background-color: #FBE0EB;
   padding-bottom:0px;
 }
 .gif{
-  width: 90%;
+  width: 100%;
 }
-.quote-1, .quote-2, .soup-meaning{
+.quote-1, .quote-2, .soup-meaning, .subhead-above{
   color:#4048E8;
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
 }
 .soup-meaning{
@@ -248,6 +283,9 @@ input:focus{
 }
 .attrb{
   color:#4048E8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
 }
 .breadcrumbs, .breadcrumbs-intro{
   visibility: hidden;
@@ -264,9 +302,10 @@ input:focus{
   color: #FBE0EB;
   font-size: 18px;
   margin-top: 0;
+  text-align: center;
 }
 .hand-icon{
-  width: 60px;
+  width: 70px;
   display: block;
   margin: 0 auto;
 }
@@ -402,8 +441,11 @@ input:focus{
     }
 }
 @media screen and (min-width: 800px) {
-  .quote-1, .quote-2, .soup-meaning{
-    font-size: 50px;
+  .soup-meaning{
+    font-size: 55px;
+  }
+  .quote-1, .quote-2{
+    font-size:40px;
   }
   .outline{
     -webkit-text-stroke-width:2px;
@@ -431,7 +473,7 @@ input:focus{
   .hamburger{
     position: relative;
     top:20px;
-    right: -15px;
+    right: -22px;
     left:auto;
     bottom: auto;
   }
@@ -481,9 +523,6 @@ input:focus{
   .dropbtn{
     font-size: 35px;
   }
-  .dropdown-text{
-      font-size: 50px;
-  }
   .header-text{
     font-size: 40px;
   }
@@ -512,8 +551,7 @@ input:focus{
      border-bottom: 3px solid #FFA69E;
      padding: 10px;
      width: 70%;
-     margin: 0;
-     background-color: #f9f9f9;
+     margin: 0 auto;
   }
   .recommend-blank{
     font-size: 30px;
@@ -533,43 +571,35 @@ input:focus{
   .hand-icon{
     width: 80px;
   }
-}
-
-@media screen and (min-width: 2000px){
-  .head-title{
-    font-size: 100px;
-  }
-  .title{
-    font-size: 20px;
-  }
   .button{
-    font-size: 30px;
-    padding: 8px 50px;
+    background-color: #FFA69E;
+    border: 3px solid #FFA69E;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .submit-container{
+    text-align: right;
+    width: 83%;
+  }
+  .label-left{
+    text-align: left;
+    width:73%;
+    margin: 0 auto;
   }
   .skip{
-    font-size: 20px;
+    border-bottom: 3px solid #F9F9F9;
   }
-  .outline{
-    -webkit-text-stroke-width:3px;
+  .skip:hover, .skip-blue:hover{
+    border-bottom: 3px solid #FFA69E;
   }
-  .title-container{
-    margin-top:250px;
+  .two-buttons{
+    width:30%;
   }
-  .breadcrumbs{
-    visibility: visible;
-    position: fixed;
-    right:40px;
-    top:40%;
-    font-size: 40px;
-  }
-  .header{
-    width: 100px;
-    height: 100%;
-    left:auto;
-    font-size: 40px;
-  }
-  .hamburger{
-    right: 40px;
-    top:10px;
-  }
+}
+@media screen and (min-width: 2000px){
 }

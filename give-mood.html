@@ -17,8 +17,8 @@
 
   <!-- Overlay content -->
   <div class="overlay-content">
-    <a href="start.html" class="nav">Home</a>
-    <a href="index.html" class="nav">Intro</a>
+    <a href="index.html" class="nav">Home</a>
+    <a href="intro.html" class="nav">Intro</a>
     <a href="about.html" class="nav">About</a>
   </div>
 
@@ -36,24 +36,35 @@
 
 <section class="dropdown-container">
   <div class="dropdown">
-    <h2 class="dropdown-text">Pick a mood for your recommendations</h2>
-      <div class="radio-button">
-        <input type="radio" name="selector">
-        <label>distracted</label>
+    <h2 class="label-left">Name</h2>
+      <h2><input type="text" class="blank"></h2>
+    <h2 class="label-left">Pick a mood</h2>
+      <div class="drop">
+        <select>
+          <option>distracted</option>
+          <option>relaxed</option>
+          <option>productive</option>
+        </select>
       </div>
-
-      <div class="radio-button">
-        <input type="radio" name="selector">
-        <label>relaxed</label>
-      </div>
-
-      <div class="radio-button">
-        <input type="radio" name="selector">
-        <label>comforted</label>
-      </div>
-    <a href="form.html"><p class="button">Submit</p></a>
+    <h2 class="label-left">Recommend music</h2>
+      <h2><input type="text" class="blank" placeholder="artist, playlist, album, etc."></h2>
+    <h2 class="label-left">Recommend something to watch</h2>
+      <h2><input type="text" class="blank" placeholder="show, movie, videos, etc."></h2>
+    <h2 class="label-left">Recommend something to play</h2>
+      <h2><input type="text" class="blank" placeholder="app, computer game, etc."></h2>
+    <h2 class="label-left">Recommend something to read</h2>
+      <h2><input type="text" class="blank" placeholder="magazine, blog, etc."></h2>
+    <h2 class="label-left">Recommend a social media account</h2>
+      <h2><input type="text" class="blank" placeholder="insta, facebook pages, youtube channel, etc."></h2>
   </div>
 </section>
+
+<div class="submit-container">
+  <a href="form.html"><p class="button">Submit</p></a>
+</div>
+
+<div class="bottom-margin">
+</div>
 
   <div>
     <a href="give-soup.html" class="skip">Go back</a>
