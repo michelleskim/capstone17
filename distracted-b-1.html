@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="full-container">
 <head>
   <title>Soup Exchange</title>
   <meta name="viewport" content="width=device-width" intial-scale="1">
@@ -8,7 +8,7 @@
   <script src="scripts.js"> </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="full-container">
   <!-- The overlay -->
 <div id="myNav" class="overlay">
 
@@ -17,37 +17,43 @@
 
   <!-- Overlay content -->
   <div class="overlay-content">
-    <a href="start.html" class="nav">Home</a>
-    <a href="index.html" class="nav">Intro</a>
+    <a href="index.html" class="nav">Home</a>
+    <a href="intro.html" class="nav">Intro</a>
     <a href="about.html" class="nav">About</a>
   </div>
 
 </div>
 
-<div class="header">
+<div class="header-intro">
   <a href="index.html"> <i class="fa fa-angle-left" aria-hidden="true" id="back-home"></i> </a>
   <span onclick="openNav()" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></span>
   <div class="breadcrumbs">
-    <a class="crumb"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
-    <a class="crumb"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
-    <a class="crumb"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
+    <a class="crumb"><i class="fa fa-circle" aria-hidden="true"></i></a>
+    <a class="crumb"><i class="fa fa-circle" aria-hidden="true"></i></a>
+    <a class="crumb"><i class="fa fa-circle" aria-hidden="true"></i></a>
     <a class="crumb"><i class="fa fa-circle" aria-hidden="true"></i></a>
   </div>
 </div>
 
-<section class="dropdown-container">
-  <div class="dropdown">
-    <h2 class="dropdown-text"> Preston recommends Grey's Anatomy</h2>
-    <p>Preston says: Its dramatic and it draws you in.
-      When I watch it, I follow the storyline and don’t think about anything else.
-      It’s like Meredith is mad because Christina is like, “I’m so upset” and I’m like, “Yeah Christina is a bitch right now!“
-      But also Christina is the best character. </p>
-    <a href="http://abc.go.com/shows/greys-anatomy"><p class="button">Watch now</p></a>
+<section class="full">
+  <div class="dropdown-container-pink">
+    <div class="dropdown-pink">
+        <h2 class="box-white-text">Preston recommends you watch Grey's Anatomy to feel distracted.</h2>
+        <p class="scroll-white">Scroll down to see what Preston said</p>
+        <a href="http://abc.go.com/shows/greys-anatomy" target="_blank"><p class="two-buttons-blue">Browse now</p></a>
+        <a href="resources.html"><p class="two-buttons-blue">This isn't what I wanted</p></a>
+    </div>
   </div>
-  <div>
-    <a href="resources.html" class="resources">Not what you wanted?</a>
-  </div>
+  <a class="scroll" href="#section-1"><img  class="hand-icon" src="img/hand-icon-2.png"></a>
 </section>
+
+<section class="full" id="section-1">
+  <h2 class="quote-2"><span class="quote">&ldquo;</span>When I watch it, I follow the storyline and don't think about anything else.
+  It's like Meredith is mad because Christina is upset, and I'm like, <i><span class="quote">&ldquo;Yeah, Christina is a bitch right now!&rdquo;</span></i>
+  But also Christina is the best character.<span class="quote">&rdquo;</span></h2>
+  <p class="attrb">Preston</p>
+</section>
+
 
 <div>
   <a href="distracted-b.html" class="skip">Go back</a>
