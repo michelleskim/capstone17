@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="full-container">
 <head>
   <title>Soup Exchange</title>
   <meta name="viewport" content="width=device-width" intial-scale="1">
@@ -8,7 +8,7 @@
   <script src="scripts.js"> </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="full-container">
   <!-- The overlay -->
 <div id="myNav" class="overlay">
 
@@ -17,32 +17,42 @@
 
   <!-- Overlay content -->
   <div class="overlay-content">
-    <a href="start.html" class="nav">Home</a>
-    <a href="index.html" class="nav">Intro</a>
+    <a href="index.html" class="nav">Home</a>
+    <a href="intro.html" class="nav">Intro</a>
     <a href="about.html" class="nav">About</a>
   </div>
 
 </div>
 
-<div class="header">
+<div class="header-intro">
   <a href="index.html"> <i class="fa fa-angle-left" aria-hidden="true" id="back-home"></i> </a>
   <span onclick="openNav()" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></span>
   <div class="breadcrumbs">
-    <a class="crumb"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
-    <a class="crumb"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
-    <a class="crumb"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
+    <a class="crumb"><i class="fa fa-circle" aria-hidden="true"></i></a>
+    <a class="crumb"><i class="fa fa-circle" aria-hidden="true"></i></a>
+    <a class="crumb"><i class="fa fa-circle" aria-hidden="true"></i></a>
     <a class="crumb"><i class="fa fa-circle" aria-hidden="true"></i></a>
   </div>
 </div>
 
-<section class="dropdown-container">
-  <div class="dropdown">
-    <h2 class="dropdown-text">Regina Spektor</h2>
-    <a href="https://www.youtube.com/user/ReginaSpektor"><p class="button">Listen now</p></a>
+<section class="full">
+  <div class="dropdown-container-pink">
+    <div class="dropdown-pink">
+        <h2 class="box-white-text">Sarah recommends you listen to Regina Spektor to feel relaxed.</h2>
+        <p class="scroll-white">Scroll down to see what Sarah said</p>
+        <a href="https://www.youtube.com/user/ReginaSpektor" target="_blank"><p class="two-buttons-blue">Listen now</p></a>
+        <a href="resources.html"><p class="two-buttons-blue">This isn't what I wanted</p></a>
+    </div>
   </div>
-  <div>
-    <a href="resources.html" class="resources">Not what you wanted?</a>
-  </div>
+  <a class="scroll" href="#section-1"><img  class="hand-icon" src="img/hand-icon-2.png"></a>
+</section>
+
+<section class="full" id="section-1">
+  <h2 class="quote-2"><span class="quote">&ldquo;</span>
+    Sometimes her happier songs will cheer me up.
+    Other times, I feel like I need some time to just wallow in my emotions and have much needed cathartic cry.
+    Other times, her music is just soft and quiet and let's me recharge and disconnect a bit.<span class="quote">&rdquo;</span></h2>
+  <p class="attrb">Sarah</p>
 </section>
 
 <div>

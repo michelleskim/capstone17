@@ -105,11 +105,11 @@ p{
   background-color: #FBE0EB;
   color:#FFA69E;
 }
-.dropdown:hover .dropdown-content {
+.button-container:hover .dropdown-content {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
+.button-container:hover .dropbtn {
     color:#4048E8;
 }
 hr{
