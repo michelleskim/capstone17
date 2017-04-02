@@ -17,6 +17,10 @@ h2{
 p{
   font-size: 16px;
 }
+.body-text{
+  font-size: 30px;
+  font-weight: 600;
+}
 .subhead{
   color:white;
   font-size: 28px;
@@ -56,7 +60,7 @@ p{
   width: 90%;
   margin: 0 auto;
 }
-.dropdown, .dropdown-left, .dropdown-pink{
+.dropdown, .dropdown-left, .dropdown-pink, .redirect{
     color:#4048E8;
     margin-top:130px;
     text-align: center;
@@ -78,10 +82,6 @@ p{
   display: inline-block;
   color:#4048E8;
   margin-top:130px;
-}
-.resources-container{
-  width: 90%;
-  margin: 0 auto;
 }
 .header-text{
   font-size: 30px;
@@ -204,6 +204,7 @@ input:focus{
   font-size: 100px;
   margin-bottom: 80px;
   text-align: center;
+  margin-left: 0;
 }
 .header, .header-intro{
   position: fixed;
@@ -242,6 +243,11 @@ input:focus{
   font-size: 20px;
   margin: 0;
 }
+.drop{
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+}
 .blank, .recommend-blank, .blank-drop{
   border: 3px solid #FFA69E;
   width: 90%;
@@ -252,6 +258,7 @@ input:focus{
   color:#FFA69E;
   padding: 10px;
   background-color: #f9f9f9;
+  margin-bottom: 40px;
 }
 .blank::placeholder{
   color: #FBE0EB;
@@ -428,6 +435,7 @@ input:focus{
 }
 .resources{
   color: #FFA69E;
+  font-size: 18px;
 }
 .resources:hover{
   border-bottom: 2px solid #FFA69E;
@@ -459,14 +467,14 @@ input:focus{
     position: relative;
     top: 25%; /* 25% from the top */
     width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
+    text-align: left; /* Centered text/links */
     /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
     text-decoration: none;
-    font-size: 50px;
+    font-size: 40px;
     color: #F9F9F9;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
@@ -480,12 +488,41 @@ input:focus{
 /* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
-    right: 23px;
-    top:-5px;
+    right: 35px;
+    top:0px;
     font-size: 60px;
 }
 .label-opt{
   font-size: 18px;
+}
+
+.styled-select {
+   overflow: hidden;
+   margin: 0 auto;
+   color:#4048E8;
+   margin-bottom:40px;
+   width: 100%;
+}
+.styled-select:focus, .styled-select select{
+    outline: none;
+}
+.styled-select select {
+   border: none;
+   font-size: 18px;
+   padding: 10px; /* If you add too much padding here, the options won't show in IE */
+   width: 100%;
+   font-family: filson-pro, sans-serif;
+   font-style: normal;
+   color:#4048E8;
+}
+.styled-select.slate {
+   border: 3px solid #FFA69E;
+}
+.label-form{
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
@@ -646,7 +683,6 @@ input:focus{
     text-align: left;
     width:70%;
     margin: 0 auto;
-    margin-bottom: 40px;
   }
   .skip{
     border-bottom: 3px solid #F9F9F9;
@@ -669,6 +705,51 @@ input:focus{
   }
   .scroll-white{
     padding-bottom: 50px;
+  }
+  .nav{
+    margin-bottom: 80px;
+    text-align: left;
+    margin-left: 20%;
+  }
+  .overlay .closebtn {
+      position: absolute;
+      right: 20px;
+      top:-5px;
+      font-size: 60px;
+  }
+  .overlay a {
+      font-size: 50px;
+  }
+  .redirect{
+    margin-top: 180px;
+    color:#4048E8;
+    text-align: center;
+  }
+  .two-buttons-container{
+    text-align: center;
+  }
+  .resources{
+    color: #FFA69E;
+    font-size: 30px;
+  }
+  .resources:hover{
+    border-bottom: 3px solid #FFA69E;
+  }
+  .blank{
+    margin-bottom: 40px;
+  }
+  .blank-drop{
+    margin-top: 40px;
+  }
+  .styled-select {
+     width: 70%;
+     margin-bottom: 40px;
+     padding: 10px;
+  }
+  .label-form{
+    width: 70%;
+    font-size: 24px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 2000px){

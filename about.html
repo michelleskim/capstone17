@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head class="full-container">
   <title>Soup Exchange</title>
   <meta name="viewport" content="width=device-width" intial-scale="1">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -8,7 +8,7 @@
   <script src="scripts.js"> </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="full-container">
   <!-- The overlay -->
   <div id="myNav" class="overlay">
 
@@ -17,30 +17,32 @@
 
   <!-- Overlay content -->
   <div class="overlay-content">
-    <a href="start.html" class="nav">Home</a>
-    <a href="index.html" class="nav">Intro</a>
+    <a href="index.html" class="nav">Home</a>
+    <a href="intro.html" class="nav">Intro</a>
     <a href="about.html" class="nav">About</a>
   </div>
 
   </div>
 
   <div class="header">
-    <a href="intro.html"> <i class="fa fa-angle-left" aria-hidden="true" id="back-home"></i> </a>
+    <a href="index.html"> <i class="fa fa-angle-left" aria-hidden="true" id="back-home"></i> </a>
     <span onclick="openNav()" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></span>
   </div>
 
-<section class="dropdown-container">
-  <div class="dropdown">
-    <h2 class="dropdown-text">About this project</h2>
-    <p>Happiness is determined 50% by genetics, 10% by life circumtances, and 40% by intentional activites.
-      This project tries to address that 40% to improve <span class="highlight">mental health</span>.</p>
-    <p>"Sometimes you have to trick your body into being happy.
-      I’m not saying this is the way to solve depression at all.
-      I’m saying that at the basic level, your body sends endorphins to your brain during and after exercise that perks you the fuck up.</p>
+<section class="full">
+  <div class="dropdown-container">
+    <div class="dropdown">
+      <h2 class="dropdown-text">About this project</h2>
+      <p class="body-text">Happiness is determined 50% by genetics, 10% by life circumtances, and 40% by intentional activites.
+        This project tries to address that 40% to improve mental health.</p>
+      <p class="scroll">Lyubomirsky, Sheldon, & Schkade</p>
+      <a class="scroll" href="#section-1"><img  class="hand-icon" src="img/hand-icon-2.png"></a>
+    </div>
   </div>
-  <div>
-    <a href="resources.html" class="resources">Click here for resources</a>
-  </div>
+</section>
+
+<section class="full" id="section-1">
+
 </section>
 
   <script src="https://use.typekit.net/pup1gxc.js"></script>
