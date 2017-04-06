@@ -289,6 +289,10 @@ input:focus{
 }
 .blank-1{
   margin-bottom: 0px;
+<<<<<<< HEAD
+=======
+  text-align: center;
+>>>>>>> origin/master
 }
 #section-2{
   text-align: center;
@@ -550,6 +554,7 @@ input:focus{
   opacity: .5;
 }
 .label-form{
+<<<<<<< HEAD
   text-align: center;
   margin-top: : 50px;
   margin-bottom: 5px;
@@ -558,6 +563,11 @@ input:focus{
   font-size: 18px;
   text-align: left;
   margin-top:30px;
+=======
+  font-size: 18px;
+  text-align: left;
+  margin: 0 auto;
+>>>>>>> origin/master
   margin-bottom: 10px;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -831,6 +841,25 @@ input:focus{
   }
   .resources{
     font-size: 18px;
+  }
+  .body-text{
+    font-size: 30px;
+  }
+  .dropdown-resources{
+    text-align: left;
+    width: 70%;
+    margin:0 auto;
+    margin-top:130px;
+  }
+  .label-opt{
+    font-size: 22px;
+    display: inline;
+  }
+  .button-opt{
+    width:10%;
+    margin-top: 40px;
+    margin-right: 40px;
+    display: inline-block;
   }
 }
 @media screen and (min-width: 2000px){
