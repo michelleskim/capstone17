@@ -289,10 +289,6 @@ input:focus{
 }
 .blank-1{
   margin-bottom: 0px;
-<<<<<<< HEAD
-=======
-  text-align: center;
->>>>>>> origin/master
 }
 #section-2{
   text-align: center;
@@ -358,12 +354,16 @@ input:focus{
   left:50%;
 }
 .gif{
-  width: 100%;
+  width:50%;
 }
 .quote-1, .quote-2, .soup-meaning, .subhead-above{
   color:#4048E8;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
+  margin-top: 130px;
+}
+.quote-1, .quote-2{
+  font-size: 25px;
 }
 .soup-meaning{
   margin-bottom: 50px;
@@ -387,6 +387,10 @@ input:focus{
   width: 100%;
   margin:0 auto;
   text-align: center;
+}
+.full::before, .full::after{
+  content: "";
+  display: table;
 }
 .scroll, .scroll-white{
   color: #FBE0EB;
@@ -550,11 +554,7 @@ input:focus{
   font-size: 30px;
   color:#FFB7AB;
 }
-.down-btn:hover{
-  opacity: .5;
-}
 .label-form{
-<<<<<<< HEAD
   text-align: center;
   margin-top: : 50px;
   margin-bottom: 5px;
@@ -563,12 +563,22 @@ input:focus{
   font-size: 18px;
   text-align: left;
   margin-top:30px;
-=======
-  font-size: 18px;
-  text-align: left;
-  margin: 0 auto;
->>>>>>> origin/master
   margin-bottom: 10px;
+}
+#panel{
+  height: 100%;
+  position: fixed;
+  /* center the element */
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  /* give it dimensions */
+  min-height: 10em;
+  width: 80%;
+}
+body.locked-scroll{
+  height:2000px;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
@@ -654,7 +664,7 @@ input:focus{
     font-size: 40px;
   }
   .start{
-    margin-top:130px;
+    margin-top:150px;
   }
   .mobile-text{
     visibility: hidden;
@@ -860,6 +870,9 @@ input:focus{
     margin-top: 40px;
     margin-right: 40px;
     display: inline-block;
+  }
+  .subhead-above{
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 2000px){
