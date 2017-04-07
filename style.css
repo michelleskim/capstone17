@@ -17,6 +17,9 @@ h2{
 p{
   font-size: 16px;
 }
+.thankyou{
+  font-size: 18px;
+}
 .give-title, .resources-title{
   font-size: 24px;
   margin-bottom: 0px;
@@ -168,6 +171,14 @@ a:link, a:visited{
 input:focus{
     outline: none;
 }
+#button-intro{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  right:auto;
+  background-color:#FFA69E;
+  border-color: #FFA69E;
+}
 .button, .button-blue, .button-drop, .button-opt{
   background-color: #FFB7AB;
   border: 3px solid #FFB7AB;
@@ -178,6 +189,9 @@ input:focus{
   display: inline-block;
   cursor: pointer;
   font-size: 18px;
+  font-family: filson-pro, sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 .button-opt{
   background-color:#FFA69E;
@@ -185,7 +199,7 @@ input:focus{
 }
 .button{
   position: relative;
-  right:5px;
+  right:7px;
 }
 .button-drop{
   padding: 10px 37px;
@@ -354,7 +368,7 @@ input:focus{
   left:50%;
 }
 .gif{
-  width:50%;
+  width:100%;
 }
 .quote-1, .quote-2, .soup-meaning, .subhead-above{
   color:#4048E8;
@@ -392,11 +406,14 @@ input:focus{
   content: "";
   display: table;
 }
-.scroll, .scroll-white{
+.scroll, .scroll-white, .scroll-intro{
   color: #FBE0EB;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 0;
   text-align: center;
+}
+.scroll-intro{
+  margin-top:40px;
 }
 .scroll-white{
   color:white;
@@ -404,7 +421,7 @@ input:focus{
   padding-bottom: 10px;
 }
 .start{
-  margin-top:150px;
+  margin-top:130px;
   color:#4048E8;
   text-align: center;
 }
@@ -553,6 +570,7 @@ input:focus{
 .down-btn{
   font-size: 30px;
   color:#FFB7AB;
+  position: relative;
 }
 .label-form{
   text-align: center;
@@ -664,7 +682,7 @@ body.locked-scroll{
     font-size: 40px;
   }
   .start{
-    margin-top:150px;
+    margin-top:130px;
   }
   .mobile-text{
     visibility: hidden;
@@ -723,6 +741,10 @@ body.locked-scroll{
     cursor: pointer;
     font-size: 18px;
   }
+  #button-intro{
+    width:auto;
+    right:7px;
+  }
   .submit-container{
     text-align: right;
     width: 83%;
@@ -755,7 +777,11 @@ body.locked-scroll{
   .options{
     font-size: 22px;
   }
+  .scroll, .scroll-intro{
+    font-size: 20px;
+  }
   .scroll-white{
+    font-size: 20px;
     padding-bottom: 50px;
   }
   .nav{
