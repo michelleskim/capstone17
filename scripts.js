@@ -69,3 +69,21 @@ jQuery(function($){
   $(".fa-chevron-down").on("click",handledotclick);
 
 });
+
+
+
+jQuery(
+
+  function(){
+
+    jQuery("#down").on("click", handleClick);
+
+    function handleClick(){
+
+      jQuery(".menu").toggleClass("active");
+
+    }
+
+  }
+
+);
