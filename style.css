@@ -21,6 +21,10 @@ h2{
   font-size: 24px;
   margin-bottom: 40px;
 }
+.dropdown-text{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
 p{
   font-size: 16px;
 }
@@ -230,7 +234,8 @@ input:focus{
 }
 .nav{
   font-size: 100px;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
+  text-align: center;
 }
 .title-head{
   font-family: balboa-plus-fill, sans-serif;
@@ -404,6 +409,25 @@ input:focus{
   margin:0 auto;
   text-align: center;
 }
+.line-break-sm{
+  display: block;
+}
+#box-top{
+  margin-top: 100px;
+}
+#box-container-container{
+  padding-bottom: 10px;
+}
+#box-container{
+  margin-top: 0px;
+}
+#box-text{
+  padding-top: 30px;
+}
+#button-border{
+  padding-left: 10px;
+  padding-right:10px;
+}
 .full::before, .full::after{
   content: "";
   display: table;
@@ -415,7 +439,7 @@ input:focus{
   text-align: center;
 }
 .scroll-intro{
-  margin-top:40px;
+  margin-top:30px;
 }
 .scroll-white{
   color:white;
@@ -439,15 +463,14 @@ input:focus{
 }
 .give-get .hover-give{
   visibility: hidden;
-  width: 100%;
-  top: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  text-align: center;
   background-color: #FFA69E;
   color: white;
   text-align: center;
   padding: 10px;
-
-  /* Position the tooltip */
-  position: absolute;
   z-index: 2;
 }
 .hover-give{
@@ -456,15 +479,14 @@ input:focus{
 }
 .give-get .hover-get{
   visibility: hidden;
-  width: 100%;
-  top: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  text-align: center;
   background-color: #FFA69E;
   color: white;
   text-align: center;
   padding: 10px;
-
-  /* Position the tooltip */
-  position: absolute;
   z-index: 2;
 }
 .hover-get{
@@ -524,7 +546,7 @@ input:focus{
 /* The navigation links inside the overlay */
 .overlay a {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     color: #F9F9F9;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
@@ -549,7 +571,7 @@ input:focus{
 #opt-style{
   margin-bottom: 0px;
   margin-top: 20px;
-  line-height: 40px;
+  line-height: auto;
 }
 .blankdown {
   width: 69%;
@@ -942,36 +964,73 @@ body.locked-scroll{
   #opt-style{
   margin-bottom: 20px;
   margin-top: 40px;
-}
-.line-break{
-  display: block;
-}
-#give-blank{
-  margin-bottom: 40px;
-}
-.blankdown {
-  margin: 0 auto;
-  width: 60%;
-  margin-top: 40px;
-}
-#down{
-  padding-left:50px;
-  padding-right: 50px;
-}
-.dropdown-opt{
-  width:70%;
-  padding-bottom: 20px;
-  margin-left: 15%;
-  padding-bottom: 40px;
-}
-.dropdown-opt a{
-  font-size: 22px;
-  margin-left: auto;
-}
-.styled-select {
-   width: 70%;
-   padding:10px;
-}
+  line-height: 40px;
+  }
+  .line-break{
+    display: block;
+  }
+  #give-blank{
+    margin-bottom: 40px;
+  }
+  .blankdown {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 40px;
+  }
+  #down{
+    padding-left:50px;
+    padding-right: 50px;
+  }
+  .dropdown-opt{
+    width:70%;
+    padding-bottom: 20px;
+    margin-left: 15%;
+    padding-bottom: 40px;
+  }
+  .dropdown-opt a{
+    font-size: 22px;
+    margin-left: auto;
+  }
+  .styled-select {
+     width: 70%;
+     padding:10px;
+  }
+  .line-break-sm{
+    display: inline;
+  }
+  #box-top{
+    margin-top: 0px;
+  }
+  #box-container-container{
+    padding-bottom: 80px;
+  }
+  #box-container{
+    margin-top: 130px;
+  }
+  #box-text{
+    padding-top: 50px;
+  }
+  #button-border{
+    padding-left: 50px;
+    padding-right:50px;
+  }
+  .overlay-content {
+      position: relative;
+      top: 18%; /* 25% from the top */
+  }
+  .overlay a{
+    font-size: 45px;
+  }
+  .nav{
+    margin-bottom: 65px;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .dropdown-text{
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 2000px){
 }
