@@ -786,18 +786,17 @@ body.locked-scroll{
   }
   .skip, .skip-blue{
     color: #FFB7AB;
-    background-color: #F9F9F9;
     visibility: visible;
+    position: fixed;
+    bottom: 25px;
+    left:30px;
+    font-size: 18px;
   }
   .skip-blue{
     border-bottom: 3px solid #4048E8;
   }
   .skip{
     border-bottom: 3px solid #F9F9F9;
-    position: fixed;
-    bottom: 25px;
-    left:30px;
-    font-size: 18px;
   }
   .skip:hover, .skip-blue:hover{
     border-bottom: 3px solid #FFB7AB;
