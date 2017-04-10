@@ -574,6 +574,7 @@ input:focus{
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-weight: 700;
 }
 .dropdown-opt a:hover{
   background-color: #FBE0EB;
@@ -877,7 +878,7 @@ body.locked-scroll{
     margin-top:130px;
   }
   .label-opt{
-    font-size: 22px;
+    font-size: 30px;
     display: inline;
   }
   .button-opt{
@@ -917,10 +918,6 @@ body.locked-scroll{
     width: 70%;
     margin:0 auto;
     margin-top:130px;
-  }
-  .label-opt{
-    font-size: 22px;
-    display: inline;
   }
   .button-opt{
     width:10%;
