@@ -87,3 +87,51 @@ jQuery(
   }
 
 );
+
+jQuery(
+
+  function(){
+
+    jQuery("#give").on("mouseover", handleHover);
+
+    function handleHover(){
+
+      jQuery("#menu-1").toggleClass("active");
+
+    }
+
+  }
+
+);
+
+jQuery(
+
+  function(){
+
+    jQuery("#get").on("mouseover", handleHover);
+
+    function handleHover(){
+
+      jQuery("#menu-2").toggleClass("active");
+
+    }
+
+  }
+
+);
+
+jQuery(
+
+  function(){
+
+    jQuery(".star").on("mouseover", handleHover);
+
+    function handleHover(){
+
+      jQuery("#menu-3").toggleClass("active");
+
+    }
+
+  }
+
+);

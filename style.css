@@ -1,7 +1,7 @@
-.menu{
+.menu, #menu-1, #menu-2, #menu-3{
   display: none;
 }
-.active.menu{
+.active.menu, .active#menu-1, .active#menu-2, .active#menu-3{
   display:block;
 }
 body{
@@ -461,37 +461,9 @@ input:focus{
   position: relative;
   display: inline-block;
 }
-.give-get .hover-give{
-  visibility: hidden;
-  position: absolute;
-  top:0;
-  left:0;
-  text-align: center;
-  background-color: #FFA69E;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  z-index: 2;
-}
-.hover-give{
-  font-size: 16px;
-  font-weight: 500;
-}
-.give-get .hover-get{
-  visibility: hidden;
-  position: absolute;
-  top:0;
-  left:0;
-  text-align: center;
-  background-color: #FFA69E;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  z-index: 2;
-}
-.hover-get{
-  font-size: 16px;
-  font-weight: 500;
+.hover{
+  font-size: 18px;
+  color:#FFA69E;
 }
 .mobile-text{
   visibility: visible;
@@ -764,10 +736,6 @@ body.locked-scroll{
     font-size: 18px;
     font-weight: 600;
   }
-
-  .give-get:hover .hover-give, .give-get:hover .hover-get{
-    visibility: visible;
-  }
   .form-container{
     text-align: center;
   }
@@ -1030,6 +998,21 @@ body.locked-scroll{
   .dropdown-text{
     font-size: 40px;
     margin-bottom: 40px;
+  }
+  .hover{
+    visibility: visible;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top:100px;
+    left:0;
+    right:0;
+    padding: 50px;
+    text-align: center;
+    background-color: #FFB7AB;
+    color: white;
+    text-align: center;
+    z-index: 2;
   }
 }
 @media screen and (min-width: 2000px){
