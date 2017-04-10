@@ -29,7 +29,7 @@ p{
   font-size: 16px;
 }
 .thankyou{
-  font-size: 18px;
+  font-size: 16px;
 }
 .give-title, .resources-title{
   font-size: 24px;
@@ -39,7 +39,7 @@ p{
   margin-bottom: 40px;
 }
 .body-text{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 }
 .subhead{
@@ -93,7 +93,7 @@ p{
   margin-top: 100px;
 }
 .bottom-margin{
-  margin-bottom:130px;
+  margin-bottom:100px;
 }
 .submit-container{
   text-align: center;
@@ -173,7 +173,7 @@ a:link, a:visited{
   padding: 5px;
 }
 input:focus{
-    -webkit-appearance:none
+    -webkit-appearance:none;
     outline: none;
 }
 #button-intro{
@@ -228,7 +228,7 @@ input:focus{
 }
 .nav{
   font-size: 100px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   text-align: center;
 }
 .title-head{
@@ -817,11 +817,6 @@ body.locked-scroll{
     font-size: 20px;
     padding-bottom: 50px;
   }
-  .nav{
-    margin-bottom: 80px;
-    text-align: left;
-    margin-left: 20%;
-  }
   .overlay .closebtn {
       position: absolute;
       right: 20px;
@@ -991,12 +986,6 @@ body.locked-scroll{
   .overlay a{
     font-size: 45px;
   }
-  .nav{
-    margin-bottom: 65px;
-    text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
   .dropdown-text{
     font-size: 40px;
     margin-bottom: 40px;
@@ -1021,6 +1010,9 @@ body.locked-scroll{
     width:30%;
     display: inline;
     font-size: 18px;
+  }
+  .bottom-margin{
+    margin-bottom:130px;
   }
 }
 @media screen and (min-width: 2000px){
