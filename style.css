@@ -10,6 +10,9 @@ body{
   font-weight: 500;
   background-color: #F9F9F9;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 .blue-bkgd{
   background-color: #4048E8;
 }
