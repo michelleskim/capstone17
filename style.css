@@ -22,7 +22,7 @@ body{
   font-style: normal;
   font-weight: 400;
   margin-top: 0px;
-  color:#FFA69E;
+  color:#4048E8;
   letter-spacing: 1px;
 }
 h1{
@@ -636,14 +636,14 @@ input, select, textarea{
 }
 .down-btn,.down-button{
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   left:40%;
   right:40%;
 }
 .scroll-intro{
   position: absolute;
   color:#FFB7AB;
-  bottom:130px;
+  bottom:80px;
   left:10%;
   right:10%;
 }
@@ -671,6 +671,9 @@ input, select, textarea{
   width: 80%;
 }
 #panel section{
+  position: relative;
+}
+.full-container section{
   position: relative;
 }
 body.locked-scroll{
