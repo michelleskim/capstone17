@@ -179,7 +179,7 @@ input:focus{
     -webkit-appearance:none;
     outline: none;
 }
-input, select{
+input, select, textarea{
   -webkit-appearance:none;
 }
 #button-intro{
@@ -208,6 +208,7 @@ input, select{
 .button{
   position: relative;
   font-size: 16px;
+  font-weight: 700;
 }
 .button-right:hover{
   background-color:#F9F9F9;
