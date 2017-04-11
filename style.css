@@ -16,6 +16,9 @@ body{
 .blue-bkgd{
   background-color: #4048E8;
 }
+.forty{
+  font-size: 30px;
+}
 h1{
   font-size: 35px;
   font-weight: 800;
@@ -34,12 +37,9 @@ p{
 .thankyou{
   font-size: 16px;
 }
-.give-title, .resources-title{
-  font-size: 24px;
-  margin-bottom: 0px;
-}
-.resources-title{
-  margin-bottom: 40px;
+.resources-title, .give-title{
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 .body-text{
   font-size: 16px;
@@ -178,6 +178,9 @@ a:link, a:visited{
 input:focus{
     -webkit-appearance:none;
     outline: none;
+}
+input, select{
+  -webkit-appearance:none;
 }
 #button-intro{
   margin-bottom: 20px;
@@ -397,7 +400,7 @@ input:focus{
 }
 .full-container{
   height: 100%;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 .full{
@@ -577,8 +580,7 @@ input:focus{
   font-weight: 700;
 }
 .dropdown-opt a:hover{
-  background-color: #FBE0EB;
-  color:#FFA69E;
+  color:#FBE0EB;
 }
 .styled-select {
    overflow: hidden;
@@ -632,6 +634,17 @@ input:focus{
 }
 body.locked-scroll{
   height:2000px;
+}
+.about-container{
+  width:90%;
+  margin: 0 auto;
+}
+#section-a{
+  width: 100%;
+}
+.percent-container-1{
+  height:50%;
+  background-color: #FBE0EB;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
@@ -1013,6 +1026,10 @@ body.locked-scroll{
   }
   .bottom-margin{
     margin-bottom:130px;
+  }
+  .about-container{
+    width:70%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 2000px){

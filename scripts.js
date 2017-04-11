@@ -66,7 +66,14 @@ jQuery(function($){
     e.preventDefault();
   }
 
-  $(".fa-chevron-down").on("click",handledotclick);
+  $(".down-btn").on("click",handledownclick);
+
+  function handledownclick(e){
+    var n=$(this).index();
+    showpanel(n);
+    e.preventDefault();
+  }
+
 
 });
 
