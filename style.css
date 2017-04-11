@@ -17,7 +17,13 @@ body{
   background-color: #4048E8;
 }
 .forty{
-  font-size: 30px;
+  font-size: 60px;
+  font-family: balboa-plus-fill, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 0px;
+  color:#FFA69E;
+  letter-spacing: 2px;
 }
 h1{
   font-size: 35px;
@@ -157,6 +163,7 @@ a:link, a:visited{
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
+  font-weight: 700;
 }
 .two-buttons-blue{
   background-color:#4048E8;
@@ -395,6 +402,7 @@ input, select, textarea{
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
+  font-size: 18px;
 }
 .breadcrumbs, .breadcrumbs-intro{
   visibility: hidden;
@@ -461,6 +469,9 @@ input, select, textarea{
   color:#FFA69E;
   position: relative;
   display: inline-block;
+}
+.give-get:hover, .underline:hover{
+  color:#4048E8;
 }
 .hover{
   font-size: 18px;
@@ -605,10 +616,14 @@ input, select, textarea{
 .styled-select.slate {
    border: 3px solid #FFA69E;
 }
-.down-btn{
+.down-btn, .down-button{
   font-size: 30px;
   color:#FFB7AB;
+  position: auto;
+}
+.down-btn{
   position: relative;
+  bottom:0;
 }
 .label-form{
   text-align: center;
@@ -636,16 +651,15 @@ input, select, textarea{
 body.locked-scroll{
   height:2000px;
 }
-.about-container{
-  width:90%;
-  margin: 0 auto;
-}
 #section-a{
   width: 100%;
 }
 .percent-container-1{
   height:50%;
   background-color: #FBE0EB;
+}
+#about-container{
+  margin-top: 50px;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
@@ -788,6 +802,7 @@ body.locked-scroll{
     display: inline-block;
     cursor: pointer;
     font-size: 18px;
+    font-weight: 500;
   }
   #button-intro{
     width:auto;
@@ -829,7 +844,7 @@ body.locked-scroll{
     font-size: 22px;
   }
   .scroll, .scroll-intro{
-    font-size: 20px;
+    font-size: 18px;
   }
   .scroll-white{
     font-size: 20px;
@@ -901,7 +916,7 @@ body.locked-scroll{
     margin-right: 40px;
     display: inline-block;
   }
-  .down-btn{
+  .down-btn, .down-button{
     font-size: 35px;
   }
   .title-head{
@@ -1006,31 +1021,27 @@ body.locked-scroll{
   }
   .hover{
     visibility: visible;
-    font-size: 20px;
-    font-weight: 500;
-    position: absolute;
-    top:100px;
-    left:0;
-    right:0;
-    padding: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 40px;
     text-align: center;
-    background-color: #FFB7AB;
-    color: white;
+    color: #4048E8;
     text-align: center;
     z-index: 2;
+    position: relative;
+    top:0px;
+    right:0px;
+    left:0px;
   }
   .two-buttons, .two-buttons-blue{
     padding: 10px 50px;
     width:30%;
     display: inline;
     font-size: 18px;
+    font-weight: 500;
   }
   .bottom-margin{
     margin-bottom:130px;
-  }
-  .about-container{
-    width:70%;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 2000px){
