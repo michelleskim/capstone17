@@ -612,12 +612,19 @@ input, select, textarea{
 .styled-select.slate {
    border: 3px solid #FFA69E;
 }
-.down-btn, #down-button{
+.down-btn{
   font-size: 30px;
   color:#FFB7AB;
 }
 #down-button{
   position:inherit;
+  color:#FFA69E;
+  border-bottom: 3px solid #FFA69E;
+  font-size: 18px;
+}
+#down-button:hover{
+  color:#4048E8;
+  border-bottom: 3px solid #4048E8;
 }
 .down-btn{
   position: absolute;
@@ -926,7 +933,7 @@ body.locked-scroll{
     margin-right: 40px;
     display: inline-block;
   }
-  .down-btn, #down-button{
+  .down-btn{
     font-size: 35px;
   }
   .title-head{
@@ -1052,6 +1059,9 @@ body.locked-scroll{
   }
   .bottom-margin{
     margin-bottom:130px;
+  }
+  #down-button{
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 2000px){
