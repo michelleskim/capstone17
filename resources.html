@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="full-container">
 <head>
   <title>Soup Exchange</title>
   <meta name="viewport" content="width=device-width" intial-scale="1">
@@ -8,7 +8,7 @@
   <script src="scripts.js"> </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="full-container">
   <!-- The overlay -->
 <div id="myNav" class="overlay">
 
@@ -30,30 +30,39 @@
   <span onclick="openNav()" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></span>
 </div>
 
-<section class="dropdown-container">
+<section class="full">
   <div class="dropdown-resources">
     <h2 class="resources-title">Resources</h2>
-        <h2 class="resources-subhead">Learn More</h2>
-        <p class="resources"><a href="https://www.mentalhealth.gov/" class="resources" target="_blank">Mental Health.gov</a></p>
-        <p class="resources"><a href="http://www.nami.org/" class="resources" target="_blank">National Alliance on Mental Illness (NAMI)</a></p>
-
-        <h2 class="resources-subhead">Get Help</h2>
-        <p class="resources"><a href="https://suicidepreventionlifeline.org/" class="resources" target="_blank">National Suicide Prevention Lifeline</a></p>
-        <p class="resources"><a href="https://www.talkspace.com/" class="resources" target="_blank">Talkspace</a></p>
-
-        <h2 class="resources-subhead">WashU Resources</h2>
-        <p class="resources"><a href="https://shs.wustl.edu/MentalHealth/Pages/default.aspx" class="resources" target="_blank">Student Health Services</a></p>
-        <p class="resources"><a href="http://unclejoe.wustl.edu/" class="resources" target="_blank">Uncle Joe's</a></p>
-
-        <h2 class="resources-subhead">Conversations about Mental Illness</h2>
-        <p class="resources"><a href="http://makeitok.org/what-to-say" class="resources" target="_blank">Make It Ok</a></p>
-        <p class="resources"><a href="https://www.apmpodcasts.org/thwod/" class="resources" target="_blank">The Hilarious World of Depression Podcast</a></p>
-        <p class="resources"><a href="https://www.apmpodcasts.org/ttfa/" class="resources" target="_blank">Terrible, Thanks for Asking Podcast</a></p>
+    <p class="body-text">While a warm bowl of soup can help when you're sick, it definitely doesn't cure a cold or flu.
+      Check out the links below for professional resources, including both local and national agencies that further the conversation and awareness of mental illlness.</p>
+      <a class="down-button" href="#section-1"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
   </div>
 </section>
 
-<div class="bottom-margin">
-</div>
+<section class="full" id="section-1">
+  <div class="start">
+    <div class="column" id="column-1">
+      <h2 class="resources-subhead">Join the Conversation</h2>
+      <p><a href="http://makeitok.org/what-to-say" class="resources" target="_blank">MakeItOk.org</a></p>
+      <p><a href="https://www.apmpodcasts.org/thwod/" class="resources" target="_blank">&ldquo;The Hilarious World of Depression&rdquo;</a></p>
+      <p><a href="https://www.apmpodcasts.org/ttfa/" class="resources" target="_blank">&ldquo;Terrible, Thanks for Asking&rdquo;</a></p>
+
+      <h2 class="resources-subhead">Learn More</h2>
+      <p><a href="https://www.mentalhealth.gov/" class="resources" target="_blank">Mental Health.gov</a></p>
+      <p><a href="http://www.nami.org/" class="resources" target="_blank">National Alliance on Mental Illness</a></p>
+    </div>
+
+    <div class="column">
+      <h2 class="resources-subhead">University Resources</h2>
+      <p><a href="https://shs.wustl.edu/MentalHealth/Pages/default.aspx" class="resources" target="_blank">Student Health Services</a></p>
+      <p><a href="http://unclejoe.wustl.edu/" class="resources" target="_blank">Uncle Joe's</a></p>
+
+      <h2 class="resources-subhead">Get Help</h2>
+      <p><a href="https://suicidepreventionlifeline.org/" class="resources" target="_blank">National Suicide Prevention Lifeline</a></p>
+      <p><a href="https://www.talkspace.com/" class="resources" target="_blank">Talkspace</a></p>
+    </div>
+  </div>
+</section>
 
   <script src="https://use.typekit.net/pup1gxc.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>

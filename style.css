@@ -17,13 +17,13 @@ body{
   background-color: #4048E8;
 }
 .forty{
-  font-size: 60px;
+  font-size: 30px;
   font-family: balboa-plus-fill, sans-serif;
   font-style: normal;
   font-weight: 400;
   margin-top: 0px;
   color:#FFA69E;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 h1{
   font-size: 35px;
@@ -94,6 +94,11 @@ p{
     color:#4048E8;
     margin-top:130px;
     text-align: center;
+}
+.dropdown-resources{
+  width: 90%;
+  margin:0 auto;
+  margin-top: 130px;
 }
 .dropdown-left{
   text-align: left;
@@ -484,13 +489,16 @@ input, select, textarea{
 .star{
   color:#FFA69E;
 }
+.star:hover{
+  color:#4048E8;
+}
 .resources{
   color: #FFA69E;
-  text-align: left;
   margin-top:0;
+  border-bottom: 3px solid #F9F9F9;
 }
 .resources:hover{
-  color:#FBE0EB;
+  border-bottom: 3px solid #FFA69E;
 }
 .radio-button{
   display: block;
@@ -612,7 +620,7 @@ input, select, textarea{
 .styled-select.slate {
    border: 3px solid #FFA69E;
 }
-.down-btn{
+.down-btn,.down-button{
   font-size: 30px;
   color:#FFB7AB;
 }
@@ -626,16 +634,16 @@ input, select, textarea{
   color:#4048E8;
   border-bottom: 3px solid #4048E8;
 }
-.down-btn{
+.down-btn,.down-button{
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   left:40%;
   right:40%;
 }
 .scroll-intro{
   position: absolute;
   color:#FFB7AB;
-  bottom:80px;
+  bottom:130px;
   left:10%;
   right:10%;
 }
@@ -646,8 +654,8 @@ input, select, textarea{
 }
 .resources-subhead{
   font-size: 18px;
-  text-align: left;
-  margin-top:30px;
+  text-align: center;
+  margin-top:60px;
   margin-bottom: 10px;
 }
 #panel{
@@ -674,9 +682,6 @@ body.locked-scroll{
 .percent-container-1{
   height:50%;
   background-color: #FBE0EB;
-}
-#about-container{
-  margin-top: 50px;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
@@ -887,9 +892,7 @@ body.locked-scroll{
   .resources{
     color: #FFA69E;
     font-size: 22px;
-  }
-  .resources:hover{
-    color:#FBE0EB;
+    text-align: center;
   }
   .blank{
     margin-bottom: 40px;
@@ -912,14 +915,13 @@ body.locked-scroll{
     margin-bottom: 10px;
   }
   .resources-subhead{
-    font-size: 30px;
+    font-size: 26px;
   }
   .body-text{
     font-size: 30px;
   }
   .dropdown-resources{
-    text-align: left;
-    width: 70%;
+    text-align: center;
     margin:0 auto;
     margin-top:130px;
   }
@@ -933,7 +935,7 @@ body.locked-scroll{
     margin-right: 40px;
     display: inline-block;
   }
-  .down-btn{
+  .down-btn,.down-button{
     font-size: 35px;
   }
   .title-head{
@@ -955,15 +957,10 @@ body.locked-scroll{
   }
   .resources{
     font-size: 18px;
+    text-align: center;
   }
   .body-text{
     font-size: 30px;
-  }
-  .dropdown-resources{
-    text-align: left;
-    width: 70%;
-    margin:0 auto;
-    margin-top:130px;
   }
   .button-opt{
     width:10%;
@@ -1062,6 +1059,21 @@ body.locked-scroll{
   }
   #down-button{
     font-size: 40px;
+  }
+  .column{
+    width:45%;
+    display: inline-block;
+    float:left;
+  }
+  #column-1{
+    margin-right: 10%;
+  }
+  .forty{
+    font-size: 60px;
+    letter-spacing: 2px;
+  }
+  #about-container{
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 2000px){
