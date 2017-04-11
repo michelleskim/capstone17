@@ -55,6 +55,7 @@ jQuery(function($){
     //update nav dots
     $(".breadcrumbs-intro i").removeClass("fa-circle").addClass("fa-circle-o");
     $(".breadcrumbs-intro").children().eq(n).children("i").removeClass("fa-circle-o").addClass("fa-circle");
+    currentpanel=n;
     console.log(n);
   }
 
@@ -69,7 +70,7 @@ jQuery(function($){
   $(".down-btn").on("click",handledownclick);
 
   function handledownclick(e){
-    var n=$(this).index();
+    var n=currentpanel+1;
     showpanel(n);
     e.preventDefault();
   }
@@ -96,49 +97,41 @@ jQuery(
 );
 
 jQuery(
-
   function(){
-
-    jQuery("#give").on("mouseover", handleHover);
-
-    function handleHover(){
-
-      jQuery("#menu-1").toggleClass("active");
-
+    jQuery("#give").on("mouseover", handleHoverOver);
+    jQuery("#give").on("mouseout", handleHoverOut);
+    function handleHoverOver(){
+      jQuery("#menu-1").addClass("active");
     }
-
+    function handleHoverOut(){
+      jQuery("#menu-1").removeClass("active");
+    }
   }
-
 );
 
 jQuery(
-
   function(){
-
-    jQuery("#get").on("mouseover", handleHover);
-
-    function handleHover(){
-
+    jQuery("#get").on("mouseover", handleHoverOver);
+    jQuery("#get").on("mouseout", handleHoverOut);
+    function handleHoverOver(){
       jQuery("#menu-2").toggleClass("active");
-
     }
-
+    function handleHoverOut(){
+      jQuery("#menu-2").toggleClass("active");
+    }
   }
-
 );
 
 jQuery(
-
   function(){
-
-    jQuery(".star").on("mouseover", handleHover);
-
-    function handleHover(){
-
+    jQuery(".star").on("mouseover", handleHoverOver);
+    jQuery(".star").on("mouseout", handleHoverOut);
+    function handleHoverOver(){
       jQuery("#menu-3").toggleClass("active");
-
     }
-
+    function handleHoverOut(){
+      jQuery("#menu-3").toggleClass("active");
+    }
   }
 
 );
