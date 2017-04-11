@@ -612,9 +612,12 @@ input, select, textarea{
 .styled-select.slate {
    border: 3px solid #FFA69E;
 }
-.down-btn, .down-button{
+.down-btn, #down-button{
   font-size: 30px;
   color:#FFB7AB;
+}
+#down-button{
+  position:inherit;
 }
 .down-btn{
   position: absolute;
@@ -923,7 +926,7 @@ body.locked-scroll{
     margin-right: 40px;
     display: inline-block;
   }
-  .down-btn, .down-button{
+  .down-btn, #down-button{
     font-size: 35px;
   }
   .title-head{

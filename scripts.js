@@ -68,9 +68,15 @@ jQuery(function($){
   }
 
   $(".down-btn").on("click",handledownclick);
-
   function handledownclick(e){
     var n=currentpanel+1;
+    showpanel(n);
+    e.preventDefault();
+  }
+
+  $("#down-button").on("click",handleupclick);
+  function handleupclick(e){
+    var n=0;
     showpanel(n);
     e.preventDefault();
   }
@@ -83,18 +89,13 @@ jQuery(function($){
 jQuery(
 
   function(){
-
     jQuery("#down").on("click", handleClick);
-
     function handleClick(){
-
       jQuery(".menu").toggleClass("active");
-
     }
-
   }
-
 );
+
 
 jQuery(
   function(){
