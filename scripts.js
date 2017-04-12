@@ -196,3 +196,58 @@ jQuery(function($){
 
 
 });
+
+
+
+
+
+
+
+
+jQuery(function($){
+
+  var currentpanel=0;
+
+  $(document).on("scroll",handleScroll);
+
+  function handleScroll(e){
+    var st=$(document).scrollTop();
+    var panel=Math.floor(st/200);
+
+    if (panel!=currentpanel){
+      currentpanel=Math.min(2,panel);
+
+      showpanel(currentpanel);
+    }
+  }
+
+
+  function showpanel(n){
+    //scroll the the correct panel
+    $("#panel-resources").css({
+      "top":(n*-100)+"%"
+    })
+    //update nav dots
+    $(".breadcrumbs-resources i").removeClass("fa-circle").addClass("fa-circle-o");
+    $(".breadcrumbs-resources").children().eq(n).children("i").removeClass("fa-circle-o").addClass("fa-circle");
+    currentpanel=n;
+    console.log(n);
+  }
+
+  $(".breadcrumbs-resources a").on("click",handleCircleClick);
+
+  function handleCircleClick(e){
+    var n=$(this).index();
+    showpanel(n);
+    e.preventDefault();
+  }
+
+  $(".down-button-resources").on("click",handleDownReClick);
+  function handleDownReClick(e){
+    var n=currentpanel+1;
+    showpanel(n);
+    e.preventDefault();
+  }
+
+
+});

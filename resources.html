@@ -9,7 +9,7 @@
   <script src="scripts.js"> </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="full-container">
+<body class="full-container locked-scroll-resources">
   <!-- The overlay -->
 <div id="myNav" class="overlay">
 
@@ -30,41 +30,47 @@
 <div class="header-intro">
   <a href="index.html"> <i class="fa fa-angle-left" aria-hidden="true" id="back-home"></i> </a>
   <span onclick="openNav()" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></span>
+  <div class="breadcrumbs-resources">
+    <a href="#section-1" class="crumb"><i class="fa fa-circle" aria-hidden="true"></i></a>
+    <a href="#section-2" class="crumb"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
+  </div>
 </div>
 
-<section class="full">
-  <div class="dropdown-resources">
-    <h2 class="resources-title">Resources</h2>
-    <p class="body-text">While a warm bowl of soup can help when you're sick, it definitely isn't a cure.
-      If this site can't give you what you need, check out the links below for more resources.</p>
-      <a class="down-button" href="#section-1"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-  </div>
-</section>
-
-<section class="full" id="section-1">
-  <div class="start">
-    <div class="column" id="column-1">
-      <h2 class="resources-subhead">Learn More</h2>
-      <p><a href="https://www.mentalhealth.gov/" class="resources" target="_blank">Mental Health.gov</a></p>
-      <p><a href="http://www.nami.org/" class="resources" target="_blank">National Alliance on Mental Illness</a></p>
-
-      <h2 class="resources-subhead">Join the Conversation</h2>
-      <p><a href="http://makeitok.org/what-to-say" class="resources" target="_blank">MakeItOk.org</a></p>
-      <p><a href="https://www.apmpodcasts.org/thwod/" class="resources" target="_blank">&ldquo;The Hilarious World of Depression&rdquo;</a></p>
-      <p><a href="https://www.apmpodcasts.org/ttfa/" class="resources" target="_blank">&ldquo;Terrible, Thanks for Asking&rdquo;</a></p>
+<div id="panel-resources">
+  <section class="full" id="section-1">
+    <div class="dropdown-resources">
+      <h2 class="resources-title">Resources</h2>
+      <p class="body-text">While a warm bowl of soup can help when you're sick, it definitely isn't a cure.
+        If this site can't give you what you need, check out the links below for more resources.</p>
+        <a class="down-button-resources" href="#section-1"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
+  </section>
 
-    <div class="column" id="column-bottom-margin">
-      <h2 class="resources-subhead">Washington University Resources</h2>
-      <p><a href="https://shs.wustl.edu/MentalHealth/Pages/default.aspx" class="resources" target="_blank">Student Health Services</a></p>
-      <p><a href="http://unclejoe.wustl.edu/" class="resources" target="_blank">Uncle Joe's</a></p>
+  <section class="full" id="section-2">
+    <div class="start">
+      <div class="column" id="column-1">
+        <h2 class="resources-subhead">Learn More</h2>
+        <p><a href="https://www.mentalhealth.gov/" class="resources" target="_blank">Mental Health.gov</a></p>
+        <p><a href="http://www.nami.org/" class="resources" target="_blank">National Alliance on Mental Illness</a></p>
 
-      <h2 class="resources-subhead">Get Help</h2>
-      <p><a href="https://suicidepreventionlifeline.org/" class="resources" target="_blank">National Suicide Prevention Lifeline</a></p>
-      <p><a href="https://www.talkspace.com/" class="resources" target="_blank">Talkspace</a></p>
+        <h2 class="resources-subhead">Join the Conversation</h2>
+        <p><a href="http://makeitok.org/what-to-say" class="resources" target="_blank">MakeItOk.org</a></p>
+        <p><a href="https://www.apmpodcasts.org/thwod/" class="resources" target="_blank">&ldquo;The Hilarious World of Depression&rdquo;</a></p>
+        <p><a href="https://www.apmpodcasts.org/ttfa/" class="resources" target="_blank">&ldquo;Terrible, Thanks for Asking&rdquo;</a></p>
+      </div>
+
+      <div class="column" id="column-bottom-margin">
+        <h2 class="resources-subhead">Washington University Resources</h2>
+        <p><a href="https://shs.wustl.edu/MentalHealth/Pages/default.aspx" class="resources" target="_blank">Student Health Services</a></p>
+        <p><a href="http://unclejoe.wustl.edu/" class="resources" target="_blank">Uncle Joe's</a></p>
+
+        <h2 class="resources-subhead">Get Help</h2>
+        <p><a href="https://suicidepreventionlifeline.org/" class="resources" target="_blank">National Suicide Prevention Lifeline</a></p>
+        <p><a href="https://www.talkspace.com/" class="resources" target="_blank">Talkspace</a></p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
   <script src="https://use.typekit.net/pup1gxc.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>

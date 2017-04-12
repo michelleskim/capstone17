@@ -427,7 +427,7 @@ input, textarea{
   text-align: center;
   font-size: 16px;
 }
-.breadcrumbs, .breadcrumbs-intro, .breadcrumbs-about{
+.breadcrumbs, .breadcrumbs-intro, .breadcrumbs-about, .breadcrumbs-resources{
   visibility: hidden;
 }
 .full-container{
@@ -649,11 +649,11 @@ input, textarea{
    border: 3px solid #FFA69E;
    padding: 10px;
 }
-.down-btn,.down-button, .down-button-about{
+.down-btn,.down-button, .down-button-about, .down-button-resources{
   font-size: 30px;
   color:#FFB7AB;
 }
-.down-btn:hover, .down-button:hover, .down-button-about:hover{
+.down-btn:hover, .down-button:hover, .down-button-about:hover, .down-button-resources:hover{
   color:#FBE0EB;
 }
 #down-button{
@@ -670,7 +670,7 @@ input, textarea{
 .soup-underline{
   text-decoration: underline;
 }
-.down-btn,.down-button, .down-button-about{
+.down-btn,.down-button, .down-button-about, .down-button-resources{
   position: absolute;
   bottom: 50px;
   left:40%;
@@ -700,7 +700,7 @@ input, textarea{
   margin-top:60px;
   margin-bottom: 10px;
 }
-#panel, #panel-about{
+#panel, #panel-about, #panel-resources{
   height: 100%;
   position: fixed;
   /* center the element */
@@ -712,7 +712,7 @@ input, textarea{
   min-height: 10em;
   width: 80%;
 }
-#panel section, #panel-about section{
+#panel section, #panel-about section, #panel-resources section{
   position: relative;
 }
 .full-container section{
@@ -723,6 +723,9 @@ body.locked-scroll{
 }
 body.locked-scroll-about{
   height:1100px;
+}
+body.locked-scroll-resources{
+  height:1000px;
 }
 #section-a{
   width: 100%;
@@ -811,7 +814,7 @@ body.locked-scroll-about{
     left:auto;
     bottom: auto;
   }
-  .breadcrumbs, .breadcrumbs-about{
+  .breadcrumbs, .breadcrumbs-about, .breadcrumbs-resources{
     visibility: visible;
     position: fixed;
     right:26px;
@@ -1017,7 +1020,7 @@ body.locked-scroll-about{
     margin-right: 40px;
     display: inline-block;
   }
-  .down-btn,.down-button, .down-button-about{
+  .down-btn,.down-button, .down-button-about, .down-button-resources{
     font-size: 35px;
   }
   #down-rec{
