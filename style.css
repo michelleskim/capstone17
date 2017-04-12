@@ -5,13 +5,17 @@
   display:block;
 }
 #menu-1, #menu-2, #menu-3{
-  width:60%;
+  width:80%;
   margin: 0 auto;
+}
+#dash{
+  margin-left: 0;
+  color:#FBE0EB;
 }
 body{
   font-family: filson-pro, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   background-color: #F9F9F9;
 }
 ::-webkit-scrollbar {
@@ -25,7 +29,7 @@ body{
   margin-top: 10px;
   margin-bottom: 20px;
   color:#4048E8;
-  font-weight: 500;
+  font-weight: 400;
 }
 #scroll-about{
   margin-bottom: 0px;
@@ -142,7 +146,7 @@ p{
 .dropdown-content a {
     color: #F9F9F9;
     padding: 20px 20px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -227,7 +231,7 @@ input, textarea{
   font-size: 18px;
   font-family: filson-pro, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
 }
 .button{
   position: relative;
@@ -264,7 +268,7 @@ input, textarea{
 .title-head{
   font-family: balboa-plus-fill, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
   position: fixed;
   top:0px;
@@ -322,7 +326,7 @@ input, textarea{
   width: 90%;
   font-family: filson-pro, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   color:#FFA69E;
   padding: 10px;
@@ -340,7 +344,7 @@ input, textarea{
 }
 .blank::placeholder{
   color: #FBE0EB;
-  font-weight: 500;
+  font-weight: 400;
 }
 .recommend-blank{
   width: 90%;
@@ -902,7 +906,7 @@ body.locked-scroll-about{
     display: inline-block;
     cursor: pointer;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
   }
   #button-intro{
     width:auto;
@@ -1119,7 +1123,7 @@ body.locked-scroll-about{
     width:30%;
     display: inline;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
   }
   .bottom-margin{
     margin-bottom:130px;
