@@ -191,7 +191,7 @@ input:focus, textarea:focus{
     -webkit-appearance:none;
     outline: none;
 }
-input, select, textarea{
+input, textarea{
   -webkit-appearance:none;
 }
 #button-intro{
@@ -473,7 +473,7 @@ input, select, textarea{
   color:#FBE0EB;
 }
 .hover{
-  visibility: visible;
+  visibility:hidden;
   font-size: 12px;
   font-weight: 700;
   margin-top: 10px;
@@ -521,7 +521,7 @@ input, select, textarea{
     height: 100%;
     width: 0;
     position: fixed; /* Stay in place */
-    z-index: 2; /* Sit on top */
+    z-index: 5; /* Sit on top */
     right: 0;
     top: 0;
     background-color: #4048E8; /* Black fallback color */
@@ -610,15 +610,14 @@ input, select, textarea{
    margin: 0 auto;
    color:#4048E8;
    margin-bottom:40px;
-   width: 100%;
+   width: 90%;
 }
 .styled-select:focus, .styled-select select{
     outline: none;
 }
 .styled-select select {
    border: none;
-   font-size: 18px;
-   padding: 10px; /* If you add too much padding here, the options won't show in IE */
+   font-size: 16px;
    width: 100%;
    font-family: filson-pro, sans-serif;
    font-style: normal;
@@ -626,6 +625,7 @@ input, select, textarea{
 }
 .styled-select.slate {
    border: 3px solid #FFA69E;
+   padding: 10px;
 }
 .down-btn,.down-button{
   font-size: 30px;
@@ -725,6 +725,7 @@ body.locked-scroll{
   .hover{
     font-size: 16px;
     margin-top: 10px;
+    visibility: visible;
   }
 }
 @media screen and (min-width:1000px){
@@ -1106,6 +1107,20 @@ body.locked-scroll{
   }
   #about-container{
     margin-top: 50px;
+  }
+  .styled-select select {
+     font-size: 18px;
+     width: 100%;
+  }
+  .site-title{
+    font-family: filson-pro, sans-serif;
+    font-style: normal;
+    color:#FFB7AB;
+    font-size: 18px;
+    z-index: 2;
+    position: absolute;
+    top:42px;
+    left:22px;
   }
 }
 @media screen and (min-width: 2000px){
