@@ -83,7 +83,7 @@ jQuery(function($){
 
   $("#button-intro").on("click",handleClick);
   function handleClick(e){
-    var n=1;
+    var n=2;
     showpanel(n);
     e.preventDefault();
   }

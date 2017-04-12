@@ -328,6 +328,9 @@ input, textarea{
 .blank-1{
   margin-bottom: 0px;
 }
+#search-blank{
+  margin-bottom: 10px;
+}
 #section-2{
   text-align: center;
 }
