@@ -430,6 +430,7 @@ input, textarea{
   letter-spacing: 1px;
   text-align: center;
   font-size: 16px;
+  margin-top: 40px;
 }
 .breadcrumbs, .breadcrumbs-intro, .breadcrumbs-about, .breadcrumbs-resources{
   visibility: hidden;
@@ -786,10 +787,16 @@ body.locked-scroll-resources{
 }
 @media screen and (min-width: 800px) {
   .soup-meaning{
-    font-size: 50px;
+    font-size: 40px;
+    width:90%;
+    margin: 0 auto;
+    margin-top: 150px;
   }
   .quote-1, .quote-2{
     font-size:40px;
+    width:90%;
+    margin: 0 auto;
+    margin-top: 150px;
   }
   .outline{
     -webkit-text-stroke-width:2px;
