@@ -23,7 +23,7 @@ body{
 .forty{
   font-size: 16px;
   margin-top: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   color:#4048E8;
   font-weight: 500;
 }
@@ -48,6 +48,9 @@ h2{
 }
 p{
   font-size: 16px;
+}
+#down-about{
+  visibility: hidden;
 }
 .thankyou{
   font-size: 16px;
@@ -400,6 +403,9 @@ input, textarea{
 }
 .gif{
   width:100%;
+}
+#gif-about{
+  width:70%;
 }
 .quote-1, .quote-2, .soup-meaning, .subhead-above{
   color:#4048E8;
@@ -1161,6 +1167,12 @@ body.locked-scroll-about{
   }
   .thankyou{
     font-size: 18px;
+  }
+  #down-about{
+    visibility: visible;
+  }
+  #gif-about{
+    width:100%;
   }
 }
 @media screen and (min-width: 2000px){
