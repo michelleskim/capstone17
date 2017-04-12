@@ -25,6 +25,7 @@ body{
   margin-top: 10px;
   margin-bottom: 60px;
   color:#4048E8;
+  font-weight: 500;
 }
 #scroll-about{
   margin-bottom: 0px;
@@ -692,7 +693,7 @@ input, textarea{
   margin-top:60px;
   margin-bottom: 10px;
 }
-#panel{
+#panel, #panel-about{
   height: 100%;
   position: fixed;
   /* center the element */
@@ -704,7 +705,7 @@ input, textarea{
   min-height: 10em;
   width: 80%;
 }
-#panel section{
+#panel section, #panel-about section{
   position: relative;
 }
 .full-container section{
@@ -712,6 +713,9 @@ input, textarea{
 }
 body.locked-scroll{
   height:2000px;
+}
+body.locked-scroll-about{
+  height:1100px;
 }
 #section-a{
   width: 100%;
