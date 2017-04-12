@@ -30,7 +30,7 @@ h1{
   font-weight: 800;
 }
 h2{
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 40px;
 }
 .dropdown-text{
@@ -41,7 +41,7 @@ p{
   font-size: 16px;
 }
 .thankyou{
-  font-size: 16px;
+  font-size: 18px;
 }
 .resources-title, .give-title{
   margin-bottom: 20px;
@@ -187,7 +187,7 @@ a:link, a:visited{
   color: #F9F9F9;
   padding: 5px;
 }
-input:focus{
+input:focus, textarea:focus{
     -webkit-appearance:none;
     outline: none;
 }
@@ -312,7 +312,7 @@ input, select, textarea{
   font-family: filson-pro, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   color:#FFA69E;
   padding: 10px;
   background-color: #f9f9f9;
@@ -396,9 +396,6 @@ input, select, textarea{
   text-align: center;
   margin-top: 130px;
 }
-.quote-1, .quote-2{
-  font-size: 18px;
-}
 .soup-meaning{
   margin-bottom: 50px;
 }
@@ -407,7 +404,7 @@ input, select, textarea{
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 .breadcrumbs, .breadcrumbs-intro{
   visibility: hidden;
@@ -473,11 +470,21 @@ input, select, textarea{
   display: inline-block;
 }
 .give-get:hover{
-  color:#4048E8;
+  color:#FBE0EB;
 }
 .hover{
-  font-size: 18px;
-  color:#FFA69E;
+  visibility: visible;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+  color: #4048E8;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  top:0px;
+  right:0px;
+  left:0px;
 }
 .mobile-text{
   visibility: visible;
@@ -490,7 +497,7 @@ input, select, textarea{
   color:#FFA69E;
 }
 .star:hover{
-  color:#4048E8;
+  color:#FBE0EB;
 }
 .resources{
   color: #FFA69E;
@@ -553,7 +560,7 @@ input, select, textarea{
     font-size: 60px;
 }
 .label-opt{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 #opt-style{
@@ -624,15 +631,22 @@ input, select, textarea{
   font-size: 30px;
   color:#FFB7AB;
 }
+.down-btn:hover, .down-button:hover{
+  color:#FBE0EB;
+}
 #down-button{
   position:inherit;
   color:#FFA69E;
-  border-bottom: 3px solid #FFA69E;
-  font-size: 18px;
+  font-size: 20px;
+}
+#down-button-underline{
+  text-decoration: underline;
 }
 #down-button:hover{
-  color:#4048E8;
-  border-bottom: 3px solid #4048E8;
+  color:#FBE0EB;
+}
+.soup-underline{
+  text-decoration: underline;
 }
 .down-btn,.down-button{
   position: absolute;
@@ -688,12 +702,45 @@ body.locked-scroll{
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
+    .overlay a {
+      font-size: 20px
+    }
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
         right: 35px;
     }
+}
+@media screen and (min-width:700px) and (max-width:1200px){
+  .start-text{
+    font-size: 80px;
+  }
+}
+@media screen and (min-width:1200px){
+  .start-text{
+    font-size: 95px;
+  }
+}
+@media screen and (min-width:600px) and (max-width:1000px){
+  .hover{
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width:1000px){
+  .hover{
+    visibility: visible;
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
+    color: #4048E8;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    top:0px;
+    right:0px;
+    left:0px;
+  }
 }
 @media screen and (min-width: 800px) {
   .soup-meaning{
@@ -704,9 +751,6 @@ body.locked-scroll{
   }
   .outline{
     -webkit-text-stroke-width:2px;
-  }
-  .start-text{
-    font-size: 95px;
   }
   .header{
     width: 70px;
@@ -831,7 +875,7 @@ body.locked-scroll{
   }
   #button-intro{
     width:auto;
-    right:7px;
+    right:8px;
   }
   .submit-container{
     text-align: right;
@@ -929,7 +973,7 @@ body.locked-scroll{
     margin-top:130px;
   }
   .label-opt{
-    font-size: 26px;
+    font-size: 25px;
     display: inline;
   }
   .button-opt{
@@ -975,7 +1019,7 @@ body.locked-scroll{
     font-size: 30px;
   }
   #opt-style{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-top: 40px;
   line-height: 40px;
   }
@@ -988,7 +1032,6 @@ body.locked-scroll{
   .blankdown {
     margin: 0 auto;
     width: 70%;
-    margin-top: 40px;
   }
   #down{
     padding-left:50px;
@@ -1035,20 +1078,6 @@ body.locked-scroll{
   .dropdown-text{
     font-size: 40px;
     margin-bottom: 40px;
-  }
-  .hover{
-    visibility: visible;
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 40px;
-    text-align: center;
-    color: #4048E8;
-    text-align: center;
-    z-index: 2;
-    position: relative;
-    top:0px;
-    right:0px;
-    left:0px;
   }
   .two-buttons, .two-buttons-blue{
     padding: 10px 50px;

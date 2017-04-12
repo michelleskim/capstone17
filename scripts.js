@@ -81,6 +81,13 @@ jQuery(function($){
     e.preventDefault();
   }
 
+  $("#button-intro").on("click",handleClick);
+  function handleClick(e){
+    var n=currentpanel+0;
+    showpanel(n);
+    e.preventDefault();
+  }
+
 
 });
 
