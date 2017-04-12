@@ -173,13 +173,13 @@ jQuery(function($){
       "top":(n*-100)+"%"
     })
     //update nav dots
-    $(".breadcrumbs i").removeClass("fa-circle").addClass("fa-circle-o");
-    $(".breadcrumbs").children().eq(n).children("i").removeClass("fa-circle-o").addClass("fa-circle");
+    $(".breadcrumbs-about i").removeClass("fa-circle").addClass("fa-circle-o");
+    $(".breadcrumbs-about").children().eq(n).children("i").removeClass("fa-circle-o").addClass("fa-circle");
     currentpanel=n;
     console.log(n);
   }
 
-  $(".breadcrumbs a").on("click",handleDotClick);
+  $(".breadcrumbs-about a").on("click",handleDotClick);
 
   function handleDotClick(e){
     var n=$(this).index();
@@ -187,7 +187,7 @@ jQuery(function($){
     e.preventDefault();
   }
 
-  $(".down-button").on("click",handleDownClick);
+  $(".down-button-about").on("click",handleDownClick);
   function handleDownClick(e){
     var n=currentpanel+1;
     showpanel(n);

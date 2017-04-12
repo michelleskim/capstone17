@@ -34,9 +34,6 @@ body{
   margin-top: 10px;
   margin-bottom: 20px;
 }
-#down-about{
-  visibility: hidden;
-}
 h1{
   font-size: 35px;
   font-weight: 700;
@@ -420,7 +417,7 @@ input, textarea{
   text-align: center;
   font-size: 16px;
 }
-.breadcrumbs, .breadcrumbs-intro{
+.breadcrumbs, .breadcrumbs-intro, .breadcrumbs-about{
   visibility: hidden;
 }
 .full-container{
@@ -642,11 +639,11 @@ input, textarea{
    border: 3px solid #FFA69E;
    padding: 10px;
 }
-.down-btn,.down-button{
+.down-btn,.down-button, .down-button-about{
   font-size: 30px;
   color:#FFB7AB;
 }
-.down-btn:hover, .down-button:hover{
+.down-btn:hover, .down-button:hover, .down-button-about:hover{
   color:#FBE0EB;
 }
 #down-button{
@@ -663,7 +660,7 @@ input, textarea{
 .soup-underline{
   text-decoration: underline;
 }
-.down-btn,.down-button{
+.down-btn,.down-button, .down-button-about{
   position: absolute;
   bottom: 50px;
   left:40%;
@@ -804,7 +801,7 @@ body.locked-scroll-about{
     left:auto;
     bottom: auto;
   }
-  .breadcrumbs{
+  .breadcrumbs, .breadcrumbs-about{
     visibility: visible;
     position: fixed;
     right:26px;
@@ -1010,7 +1007,7 @@ body.locked-scroll-about{
     margin-right: 40px;
     display: inline-block;
   }
-  .down-btn,.down-button{
+  .down-btn,.down-button, .down-button-about{
     font-size: 35px;
   }
   #down-rec{
@@ -1161,9 +1158,6 @@ body.locked-scroll-about{
   .about-column{
     width:33%;
     float:left;
-  }
-  #down-about{
-    visibility: visible;
   }
   .thankyou{
     font-size: 18px;
