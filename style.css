@@ -115,6 +115,12 @@ p{
     margin-top:150px;
     text-align: center;
 }
+#about-margin{
+  margin-top: 70px;
+}
+#give-margin{
+  margin-top: 130px;
+}
 .dropdown-resources{
   width: 90%;
   margin:0 auto;
@@ -481,7 +487,7 @@ input, textarea{
   padding-bottom: 10px;
 }
 .start{
-  margin-top:100px;
+  margin-top:130px;
   color:#4048E8;
   text-align: center;
 }
@@ -1195,6 +1201,9 @@ body.locked-scroll-resources{
   #thankyou-title{
     font-size: 30px;
     margin-bottom: 30px;
+  }
+  #about-margin, #give-margin{
+    margin-top: 150px;
   }
 }
 @media screen and (min-width: 2000px){
