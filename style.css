@@ -17,13 +17,20 @@ body{
   background-color: #4048E8;
 }
 .forty{
-  font-size: 30px;
-  font-family: balboa-plus-fill, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  margin-top: 0px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 60px;
   color:#4048E8;
-  letter-spacing: 1px;
+}
+#scroll-about{
+  margin-bottom: 0px;
+}
+#title-about{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#down-about{
+  visibility: hidden;
 }
 h1{
   font-size: 35px;
@@ -41,7 +48,7 @@ p{
   font-size: 16px;
 }
 .thankyou{
-  font-size: 18px;
+  font-size: 16px;
 }
 .resources-title, .give-title{
   margin-bottom: 20px;
@@ -654,6 +661,12 @@ input, textarea{
   left:40%;
   right:40%;
 }
+#down-rec{
+  position: relative;
+  top:20px;
+  left:auto;
+  right:auto;
+}
 .scroll-intro{
   position: absolute;
   color:#FFB7AB;
@@ -699,6 +712,9 @@ body.locked-scroll{
 .percent-container-1{
   height:50%;
   background-color: #FBE0EB;
+}
+#column-bottom-margin{
+  margin-bottom: 130px;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
@@ -986,6 +1002,13 @@ body.locked-scroll{
   .down-btn,.down-button{
     font-size: 35px;
   }
+  #down-rec{
+    position: absolute;
+    bottom: 50px;
+    left:40%;
+    right:40%;
+    top:auto;
+  }
   .title-head{
     font-size: 25px;
   }
@@ -1102,8 +1125,8 @@ body.locked-scroll{
     margin-right: 10%;
   }
   .forty{
-    font-size: 60px;
-    letter-spacing: 2px;
+    font-size: 18px;
+    margin-top: 10px;
   }
   #about-container{
     margin-top: 50px;
@@ -1118,9 +1141,19 @@ body.locked-scroll{
     color:#FFB7AB;
     font-size: 18px;
     z-index: 2;
-    position: absolute;
-    top:42px;
-    left:22px;
+    position: fixed;
+    top:25px;
+    left:25px;
+  }
+  .about-column{
+    width:33%;
+    float:left;
+  }
+  #down-about{
+    visibility: visible;
+  }
+  .thankyou{
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 2000px){
