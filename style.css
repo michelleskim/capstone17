@@ -4,6 +4,10 @@
 .active.menu, .active#menu-1, .active#menu-2, .active#menu-3{
   display:block;
 }
+#menu-1, #menu-2, #menu-3{
+  width:60%;
+  margin: 0 auto;
+}
 body{
   font-family: filson-pro, sans-serif;
   font-style: normal;
@@ -34,7 +38,7 @@ body{
 }
 h1{
   font-size: 35px;
-  font-weight: 800;
+  font-weight: 700;
 }
 h2{
   font-size: 20px;
@@ -253,14 +257,13 @@ input, textarea{
   border-bottom: 3px solid #FBE0EB;
 }
 .nav{
-  font-size: 100px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   text-align: center;
 }
 .title-head{
   font-family: balboa-plus-fill, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 22px;
   position: fixed;
   top:0px;
@@ -473,6 +476,7 @@ input, textarea{
   font-size: 40px;
   width: 90%;
   margin: 0 auto;
+  font-weight: 800;
 }
 .give-get{
   color:#FFA69E;
@@ -485,7 +489,7 @@ input, textarea{
 .hover{
   visibility:hidden;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 10px;
   text-align: center;
   color: #4048E8;
@@ -551,7 +555,7 @@ input, textarea{
 /* The navigation links inside the overlay */
 .overlay a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
     color: #F9F9F9;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
@@ -730,7 +734,7 @@ body.locked-scroll{
         right: 35px;
     }
 }
-@media screen and (min-width:700px) and (max-width:1200px){
+@media screen and (min-width:800px) and (max-width:1200px){
   .start-text{
     font-size: 80px;
   }
@@ -753,13 +757,13 @@ body.locked-scroll{
     font-size: 18px;
     margin-top: 40px;
     text-align: center;
-    color: #4048E8;
     text-align: center;
     z-index: 2;
     position: relative;
     top:0px;
     right:0px;
     left:0px;
+    line-height: 25px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -1099,9 +1103,6 @@ body.locked-scroll{
       position: relative;
       top: 18%; /* 25% from the top */
   }
-  .overlay a{
-    font-size: 45px;
-  }
   .dropdown-text{
     font-size: 40px;
     margin-bottom: 40px;
@@ -1147,6 +1148,11 @@ body.locked-scroll{
     position: fixed;
     top:25px;
     left:25px;
+    border-bottom: 2px solid #FFB7AB;
+  }
+  .site-title:hover{
+    color:#FBE0EB;
+    border-bottom: 2px solid #FBE0EB;
   }
   .about-column{
     width:33%;
