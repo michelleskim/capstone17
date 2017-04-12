@@ -12,6 +12,9 @@
   margin-left: 0;
   color:#FBE0EB;
 }
+.site-title{
+  visibility: hidden;
+}
 body{
   font-family: filson-pro, sans-serif;
   font-style: normal;
@@ -1171,6 +1174,7 @@ body.locked-scroll-resources{
      width: 100%;
   }
   .site-title{
+    visibility: visible;
     font-family: filson-pro, sans-serif;
     font-style: normal;
     color:#FFB7AB;
