@@ -81,13 +81,22 @@ jQuery(function($){
     e.preventDefault();
   }
 
-  $("#button-intro").on("click",handleClick);
-  function handleClick(e){
-    var n=2;
-    showpanel(n);
+  $('#form-intro').on('keyup keypress', function(e) {
+    var keyCode = e.keyCode || e.which;
+    if (keyCode === 13) {
+      e.preventDefault();
+      clearintroform ();
+      return false;
+    }
+  });
+  function clearintroform(){
+    $("#search-blank").val("");
+  }
+  $("#button-intro").on("click",handleformsubmit);
+  function handleformsubmit(e){
+    clearintroform();
     e.preventDefault();
   }
-
 
 });
 
