@@ -81,14 +81,10 @@ jQuery(function($){
     e.preventDefault();
   }
 
-  $("#button-intro").on("click",handleClick);
-  function handleClick(e){
-    var n=2;
-    showpanel(n);
-    e.preventDefault();
-  }
-
-
+  $( "#buttin-intro" ).click(function(e) {
+            e.preventDefault();
+            $( "#search-blank" ).load( "index.html#section-2" );
+        });
 });
 
 
