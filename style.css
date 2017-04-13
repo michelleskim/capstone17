@@ -355,9 +355,11 @@ input, textarea{
 #section-2{
   text-align: center;
 }
-.blank::placeholder{
+.blank::placeholder, #search-blank::placeholder{
   color: #FBE0EB;
   font-weight: 400;
+  -webkit-appearance:none;
+  font-size: 12px;
 }
 .recommend-blank{
   width: 90%;
@@ -577,7 +579,8 @@ input, textarea{
 /* The navigation links inside the overlay */
 .overlay a {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
+    font-weight: 500;
     color: #F9F9F9;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
@@ -1208,6 +1211,12 @@ body.locked-scroll-resources{
   }
   #about-margin, #give-margin{
     margin-top: 150px;
+  }
+  .blank::placeholder, #search-blank::placeholder{
+    color: #FBE0EB;
+    font-weight: 400;
+    -webkit-appearance:none;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 2000px){
