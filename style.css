@@ -1062,6 +1062,7 @@ body.locked-scroll-resources{
     width: 70%;
     margin: 0 auto;
     margin-bottom: 40px;
+    font-weight: 500;
   }
   .give-title, .resources-title{
     font-size: 40px;
