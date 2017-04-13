@@ -408,7 +408,8 @@ input, textarea{
   color: #F9F9F9;
 }
 .quote{
-  color:#FBE0EB;
+  color:#FFB7AB;
+  opacity: .6;
 }
 .intro-1{
   font-family: aurea-ultra, serif;
