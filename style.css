@@ -601,7 +601,7 @@ input, textarea{
 }
 .label-opt{
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 #opt-style{
   margin-bottom: 0px;
@@ -640,7 +640,7 @@ input, textarea{
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .dropdown-opt a:hover{
   color:#FBE0EB;
